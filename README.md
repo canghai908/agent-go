@@ -1,6 +1,7 @@
 # Zabbix Agent-go
 
-使用 https://github.com/fujiwara/go-zabbix-get 实现的一个支持被动检查的Agent，源码及打包好的Agent的rpm包     
+使用 https://github.com/fujiwara/go-zabbix-get 实现的一个支持被动检查的Agent，源码及打包好的Agent的rpm包 
+详细使用说明：https://blog.cactifans.com/2019/03/29/%E4%BD%BF%E7%94%A8Golang%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84Zabbix-Agent/    
 RPM包：https://dl.cactifans.com/tools/agent-go-0.0.1-1.el7.x86_64.rpm  
 hash
 ```
