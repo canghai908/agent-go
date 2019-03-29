@@ -2,6 +2,10 @@
 
 使用 https://github.com/fujiwara/go-zabbix-get 实现的一个支持被动检查的Agent，源码及打包好的Agent的rpm包     
 RPM包：https://dl.cactifans.com/tools/agent-go-0.0.1-1.el7.x86_64.rpm  
+hash
+```
+3c39e829e1611543170b3f26fad128a123270234  agent-go-0.0.1-1.el7.x86_64.rpm
+```
 模版：https://dl.cactifans.com/tools/template_linux_agent_go.tar.gz  
 目前一共实现里6个监控指标的被动采集，数据采集使用[github.com/shirou/gopsutil](github.com/shirou/gopsutil) 
 
