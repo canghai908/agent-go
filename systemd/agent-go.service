@@ -1,0 +1,16 @@
+[Unit]
+Description=Agent-go
+After=network.target
+
+[Service]
+Environment="CONFFILE=/etc/agent-go/agent-go.ini"
+Type=simple
+Restart=on-failure
+PIDFile=/tmp/agent-go.pid
+KillMode=control-group
+ExecStart=/usr/bin/agent-go -c $CONFFILE
+ExecStop=/bin/kill -SIGTERM $MAINPID
+RestartSec=3s
+
+[Install]
+WantedBy=multi-user.target
