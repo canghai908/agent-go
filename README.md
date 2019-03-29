@@ -1,7 +1,7 @@
 # Zabbix Agent-go
 
-使用 https://github.com/fujiwara/go-zabbix-get 实现的一个支持被动检查的Agent，源码及打包好的Agent的rpm包    
-RPM包：https://dl.cactifans.com/tools/agent-go-0.0.1-1.el7.x86_64.rpm
+使用 https://github.com/fujiwara/go-zabbix-get 实现的一个支持被动检查的Agent，源码及打包好的Agent的rpm包     
+RPM包：https://dl.cactifans.com/tools/agent-go-0.0.1-1.el7.x86_64.rpm  
 模版：https://dl.cactifans.com/tools/template_linux_agent_go.tar.gz  
 目前一共实现里6个监控指标的被动采集，数据采集使用[github.com/shirou/gopsutil](github.com/shirou/gopsutil) 
 
@@ -38,10 +38,10 @@ Agent配置文件位于
 /etc/agent-go/agent-go.ini
 ```
 配置文件介绍
->Debug 日志级别1-7
->ListenIP agent监听的ip，默认为0.0.0.0所有ip
->ListenPort agent监听的port，默认为10049
->LogFile 日志路径，默认为/var/log/agent-go.log
+>Debug 日志级别1-7  
+>ListenIP agent监听的ip，默认为0.0.0.0所有ip  
+>ListenPort agent监听的port，默认为10049  
+>LogFile 日志路径，默认为/var/log/agent-go.log  
 
 Zabbix中导入模版，新建一个主机，并关联导入的模版，主机名可以随意，IP为部署agent的机器ip，端口为10499
 ![1](https://img.cactifans.com/wp-content/uploads/2019/03/4D5453E7-EC95-48C8-9C91-5DE47BD597AE-1024x430.jpg)
