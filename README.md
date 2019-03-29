@@ -1,10 +1,10 @@
 # Zabbix Agent-go
 
-使用 https://github.com/fujiwara/go-zabbix-get 实现的一个支持被动检查的Agent，源码及打包好的Agent的rpm包
-源码地址：
-RPM包：
-模版：
-目前一共实现里6个监控指标的被动采集，数据采集使用[github.com/shirou/gopsutil](github.com/shirou/gopsutil)  
+使用 https://github.com/fujiwara/go-zabbix-get 实现的一个支持被动检查的Agent，源码及打包好的Agent的rpm包    
+RPM包：https://dl.cactifans.com/tools/agent-go-0.0.1-1.el7.x86_64.rpm
+模版：https://dl.cactifans.com/tools/template_linux_agent_go.tar.gz  
+目前一共实现里6个监控指标的被动采集，数据采集使用[github.com/shirou/gopsutil](github.com/shirou/gopsutil) 
+
 | ItemKey      |    说明 | 单位  |
 | :-------- | :--------| :--: |
 | system.info  | 操作系统信息 |    |
@@ -13,6 +13,7 @@ RPM包：
 | mem.total  | 总内存 |MB    |
 | mem.used  | 已使用内存 | MB   |
 | mem.usedper  | 内存使用率 | %   |
+
 ### 使用
 
 目前只提供centos7_x64位rpm包，下载并安装RPM包
